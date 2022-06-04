@@ -1,0 +1,723 @@
+.w {
+  width: 1350px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+li {
+  cursor: pointer;
+}
+
+/* 头部样式 */
+.header {
+  position: relative;
+  height: 150px;
+  /* 第一种做法 */
+  /* background: url(../img/topBanner.png) no-repeat center -25px; */
+}
+
+/* 第二种做法 */
+video {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+
+.topmask {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 50px 50px #97a275;
+  display: none;
+}
+
+.header .w {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -675px;
+}
+
+.topBanner {
+  padding-top: 25px;
+}
+
+.topBanner .left ul li i {
+  vertical-align: middle;
+}
+
+.topBanner ul li {
+  float: left;
+  color: #fff;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.topBanner .center .iptBox {
+  height: 40px;
+  border-radius: 5px;
+  line-height: 40px;
+  background-color: #e9dddb;
+  padding: 0 5px;
+  margin: -10px 0 0 25px;
+}
+
+.iptBox input {
+  height: 20px;
+  width: 440px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #e9dddb;
+}
+
+.iptBox button {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+/* 顶部右边 */
+.right {
+  margin-top: -10px;
+}
+
+.topBanner .right .origin {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 36px;
+}
+.topBanner .right .origin a{
+  color: #28baee;
+}
+.right li {
+  text-align: center;
+}
+
+.right li i {
+  font-size: 22px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.right li:last-child {
+  margin-left: 16px;
+  width: 90px;
+  height: 34px;
+  border-radius: 8px;
+  background: #fb7299;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 34px;
+}
+.right li .icon-xiazai1{
+  vertical-align: middle;
+}
+
+/* 头部左边小li的触摸效果 */
+.topBanner .left li:nth-child(n+2):hover {
+  margin-top: -5px;
+  transition: all .3s;
+}
+
+/* 头部右边小li的触摸效果 */
+.topBanner .right li:nth-child(-n + 7):hover i {
+  top: -5px;
+  left: 0;
+  transition: all .3s;
+}
+
+.logo {
+  width: 180px;
+  position: absolute;
+  top: 70px;
+  left: -10px;
+}
+
+.logo a img {
+  min-height: 60px;
+  width: 100%;
+}
+
+/* 分类推荐 */
+.recommend {
+  height: 100px;
+  padding: 20px 0;
+}
+
+.recLeft,
+.recCenter,
+.recRight {
+  float: left;
+}
+
+.recLeft ul li {
+  float: left;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.recLeft ul li div {
+  margin-top: 6px;
+}
+
+.recLeft i {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  line-height: 42px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #ff9212;
+}
+
+/* 分类中间 */
+.recCenter {
+  width: 873px;
+  padding-right: 7px;
+  border-right: 1px solid #ccc;
+}
+
+.recCenter li {
+  width: 86px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: #f6f7f8;
+  float: left;
+  border-radius: 5px;
+  margin-right: 8px;
+  text-align: center;
+  line-height: 28px;
+  color: #61666d;
+}
+
+.recCenter li:nth-child(-n +9) {
+  margin-bottom: 12px;
+}
+
+.recCenter li:hover {
+  background-color: #e0e2e4;
+}
+
+/* 推荐右边部位 */
+.recRight {
+  /* float: right; */
+  width: 260px;
+  margin-top: 5px;
+}
+
+.recRight li {
+  float: left;
+  padding-left: 20px;
+  color: #61666d;
+}
+
+.recRight li i {
+  font-size: 20px;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+.recRight li:nth-child(-n + 3) {
+  margin-bottom: 16px;
+}
+
+.recRight li:hover {
+  color: #00aeec;
+}
+
+/* 轮播板块 */
+.public {
+  margin-top: 20px;
+}
+
+.pubLeft,
+.pubRight {
+  float: left;
+}
+
+.pubLeft {
+  height: 360px;
+  width: calc((1350px - 32px) / 5 * 2 + 8px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pubLeft img {
+  width: 100%;
+  height: 275px;
+  vertical-align: middle;
+}
+
+/* 公告左边的轮播图阴影 */
+.swiper_mask {
+  position: relative;
+  height: 90px;
+  padding: 0 10px;
+  padding-top: 30px;
+  box-shadow: 0px 0px 55px 50px #4b458e;
+  background-color: #4b458e;
+}
+
+.swiper_text {
+  color: #f8ffed;
+  overflow: hidden;
+}
+
+.up_next button {
+  width: 28px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 8px;
+  color: #f8ffed;
+  border: none;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.up_next button:hover {
+  background-color: #716ca0;
+}
+
+.up_next button i {
+  font-size: 12px;
+}
+
+.swiper_origin li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+.swiper_origin li i {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #9491b8;
+  transition: all .2s;
+}
+
+.swiper_origin li:hover i {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  margin-top: -2px;
+}
+
+/* 公告右边 */
+.pubRight {
+  width: calc((1350px - 32px) / 5 * 3 + 24px);
+}
+
+.pubRight .biliVedio li {
+  width: calc((1350px - 32px) / 5 );
+  float: left;
+  margin-left: 8px;
+
+}
+
+.biliVedio li {
+  height: 224px;
+}
+
+.product {
+  position: relative;
+  width: 100%;
+  height: 135px;
+  border-radius: 6px;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* 公告右边hover效果 */
+.product:hover img,
+.product:hover .textMask,
+.product:hover .replay {
+  transition: all .3s;
+}
+
+.product:hover img {
+  transform: scale(1.05);
+}
+
+.product:hover .textMask {
+  opacity: 0;
+}
+
+.product:hover .replay {
+  opacity: 1;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+}
+
+.textMask {
+  font-weight: 500;
+  width: 240px;
+  padding: 0 5px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+.replay {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  opacity: 0;
+}
+
+.replay i {
+  font-size: 24px;
+}
+
+.biliVedio .contentText {
+  padding-top: 8px;
+  line-height: 16px;
+}
+
+.proData {
+  color: #9499b5;
+  font-size: 14px;
+}
+
+.proData .icon-tongzhi {
+  vertical-align: text-bottom;
+}
+
+.contentText:hover,
+.proData:hover {
+  color: #00aeec;
+}
+
+.contentText img {
+  width: 20px;
+}
+
+/* 推广板块 */
+
+.kindTopL>span {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.kind button {
+  height: 31px;
+  padding: 8px 12px;
+  color: #18191c;
+  line-height: 16px;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 12px;
+  border: 1px solid #e3e5e7;
+  margin-left: 8px;
+  background-color: #fff;
+}
+
+.kind button:hover {
+  background-color: #e3e5e7;
+}
+
+.kindTopR .fl {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.kindTopR>div {
+  padding: 5px 0;
+}
+
+.kindTopR .icon-xiangyoujiantou {
+  font-size: 12px;
+}
+
+.kindTopR .icon-shuaxin1 {
+  font-size: 12px;
+}
+
+.kindTopR .foryouCommend {
+  font-weight: 600;
+  color: #00aeec !important;
+  border-bottom: 3px solid #00aeec;
+  margin-right: 74px;
+}
+
+.kindContent {
+  margin-top: 10px;
+}
+
+.kindContent .biliVedio li {
+  width: calc((1350px - 32px) / 5);
+  float: left;
+  margin-left: 8px;
+}
+
+.kindContent .biliVedio li:last-child {
+  /* width: calc(20% - 4px); */
+}
+
+/* 全局定义一个样式，清除每行第一个li的左边距 */
+.exceptLeftMargin {
+  margin-left: 0 !important;
+}
+
+.kind .icon-tongzhi {
+  font-size: 50px;
+  color: #ffd778;
+  vertical-align: sub;
+  position: relative;
+  top: 5px;
+}
+
+.kind .icon-jiangbei {
+  font-size: 36px;
+  color: #ffd778;
+  vertical-align: sub;
+}
+
+.kind .icon-zhibo {
+  font-size: 36px;
+  color: #48cfe5;
+  vertical-align: sub;
+}
+
+/* 动画板块 */
+.kindTopL .icon-w_dianshi- {
+  font-size: 34px;
+  color: #7b78eb;
+  vertical-align: sub;
+}
+
+.kindLeft {
+  width:  calc((1350px - 32px) / 5 * 4 + 24px) ;
+}
+
+.kindLeft .biliVedio li {
+  width:  calc((1350px - 32px) / 5);
+  float: left;
+  margin-left: 8px;
+}
+
+.topList {
+  width:  calc((1350px - 32px) / 5);
+}
+
+.topList>div {
+  font-size: 24px;
+}
+
+.topList .icon-xiangyoujiantou {
+  font-size: 12px;
+}
+
+.topListHead {
+  margin-bottom: 1px;
+  padding-left: 10px;
+
+}
+
+.topList ul {
+  border: 1px solid #f1f2f3;
+  border-radius: 8px;
+}
+
+.topList ul li {
+  height: 52px;
+  line-height: 52px;
+  width: 100%;
+  background-color: #f4f5f6;
+  padding: 0 15px;
+}
+.topList ul li:hover {
+  color: #48cfe5;
+}
+.number {
+  margin-right: 10px;
+}
+
+.topList li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.topList li:first-child .number {
+  color: #ff473d;
+}
+
+.topList li:nth-child(2) .number {
+  color: #ff6a29;
+}
+
+.topList li:nth-child(3) .number {
+  color: #ff9214;
+}
+
+.topList li:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+.topList li:nth-child(2n) {
+  background-color: #f1f2f3;
+}
+
+/* 底部信息 */
+/* .bottomMsg {
+  padding: 30px 0;
+  margin-top: 42px;
+  background-color: #f6f7f8;
+}
+
+.aboutMsg {
+  margin-bottom: 40px;
+}
+
+.grey {
+  color: #9499b3;
+  margin-bottom: 12px;
+}
+
+.btmTab {
+  width: 350px;
+}
+
+.btmTab li {
+  float: left;
+  margin-right: 12px;
+  line-height: 24px;
+}
+
+.bottomLeft,
+.bottomCenter {
+  margin-right: 150px;
+}
+
+.btmLogo {
+  float: left;
+  margin-right: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btmLogo:last-child {
+  margin-right: 0;
+}
+
+.btmLogo .iconfont {
+  font-size: 26px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: aqua;
+  border-radius: 50%;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.bottomRight .btmLogo .icon-xiazai {
+  background-color: #3752c8;
+  line-height: 55px;
+}
+
+.bottomRight .btmLogo .icon---gongyixingjiuji {
+  background-color: #00aeec;
+}
+
+.bottomRight .btmLogo .icon-xinlangweibo {
+  background-color: #db4437;
+}
+
+.bottomRight .btmLogo .icon-weixin {
+  background-color: #57bb40;
+  font-size: 30px;
+} */
+.btmMsg{
+  height: 430px;
+}
+/* 最下面公告 */
+.notice {
+  width: 1180px;
+  margin: 0 auto;
+  border-top: 1px solid #e3e5e7;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #9499a0;
+}
+
+.notice .btmText {
+  height: 24px;
+}
+
+.spriteImg {
+  display: inline-block;
+  width: 19px;
+  height: 21px;
+  background: url(../assets/sprint.png) no-repeat;
+  vertical-align: top;
+}
+
+.police {
+  background-position: -40px 0;
+}
+
+.kuohao {
+  background-position: -20px 0;
+}
+
+.btmImg {
+  margin-top: 30px;
+}
+
+.btmImg img {
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* 滑动下来头部导航 */
+.publicTopBanner{
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+}
+
+/* 右边小功能按钮*/
+.littleBtn {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  margin-left: 710px;
+}
+
+.littleBtn ul li {
+  width: 34px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 4px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.littleBtn ul li i {
+  font-size: 20px;
+}

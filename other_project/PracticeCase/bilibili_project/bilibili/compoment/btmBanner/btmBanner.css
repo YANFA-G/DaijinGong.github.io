@@ -1,0 +1,115 @@
+
+/* 底部信息 */
+.bottomMsg {
+    padding: 30px 0;
+    margin-top: 42px;
+    background-color: #f6f7f8;
+  }
+  
+  .aboutMsg {
+    margin-bottom: 40px;
+  }
+  
+  .grey {
+    color: #9499b3;
+    margin-bottom: 12px;
+  }
+  
+  .btmTab {
+    width: 350px;
+  }
+  
+  .btmTab li {
+    float: left;
+    margin-right: 12px;
+    line-height: 24px;
+  }
+  
+  .bottomLeft,
+  .bottomCenter {
+    margin-right: 150px;
+  }
+  
+  .btmLogo {
+    float: left;
+    margin-right: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btmLogo:last-child {
+    margin-right: 0;
+  }
+  
+  .btmLogo .iconfont {
+    font-size: 26px;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: aqua;
+    border-radius: 50%;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .bottomRight .btmLogo .icon-xiazai {
+    background-color: #3752c8;
+    line-height: 55px;
+  }
+  
+  .bottomRight .btmLogo .icon---gongyixingjiuji {
+    background-color: #00aeec;
+  }
+  
+  .bottomRight .btmLogo .icon-xinlangweibo {
+    background-color: #db4437;
+  }
+  
+  .bottomRight .btmLogo .icon-weixin {
+    background-color: #57bb40;
+    font-size: 30px;
+  }
+  
+  /* 最下面公告 */
+  .notice {
+    width: 1180px;
+    margin: 0 auto;
+    border-top: 1px solid #e3e5e7;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #9499a0;
+  }
+  
+  .notice .btmText {
+    height: 24px;
+  }
+  
+  .spriteImg {
+    display: inline-block;
+    width: 19px;
+    height: 21px;
+    background: url(./img/sprint.png) no-repeat;
+    vertical-align: top;
+  }
+  
+  .police {
+    background-position: -40px 0;
+  }
+  
+  .kuohao {
+    background-position: -20px 0;
+  }
+  
+  .btmImg {
+    margin-top: 30px;
+  }
+  
+  .btmImg img {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+  }

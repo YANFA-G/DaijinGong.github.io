@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 800px;
+        }
+        /* cube-rotate */
+        .cube{
+            transform-style: preserve-3d;
+            width: 350px;
+            height: 221px;
+            margin:100px auto 100px;
+            background-color: pink;
+            clear:both;
+            transition:all 3s;
+            /* transform-origin: right; */
+        }
+        .cube:hover{
+            transform:rotateX(-60deg);
+        }
+        .image6{
+            position:absolute;
+            top:0px;
+            width: 350px;
+            height: 221px; 
+            transition: all 3s;
+            /* transform-origin: right bottom; */
+        }
+        .image6:hover{
+            /* transform:rotateY(60deg); */
+        }
+        .image7{
+            width: 350px;
+            height: 221px; 
+            position: absolute;
+            top:0px;
+            transition: all 3s;
+            transform:translateZ(250px)
+            /* transform-origin: right bottom; */
+        }
+        .image7:hover{
+            /* transform:rotateY(60deg); */
+        }
+
+
+        ul{
+            list-style: none;
+            width: 320px;
+            margin: 30px auto;
+            perspective: 800px;
+            transform-style:preserve-3d;
+        }
+        li{
+            position: relative;
+            width: 80px;
+            height: 30px;
+            float: left;
+            text-align: center;
+            transform:rotateY(50deg);
+            /* background-color: pink; */
+        }
+        li a{
+            position: absolute;
+            display: block;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            color: #fff;
+            text-decoration: none;
+            /* padding:0px 10px; */
+            line-height: 30px;
+            font-size:24px;
+        }
+        li a:first-child{
+            background-color: green;
+            /* transform:translateZ(15px); */
+        }
+        li a:last-child{
+            background-color: orange;
+            transform:rotateX(90deg) translateZ(15px);
+        }
+        .animationBox{
+            width: 200px;
+            height: 200px;
+            background-image: url(./card1.png);
+            background-size: cover;
+            animation: 5s animation1 infinite;
+        }
+        .animationBox:hover{
+            animation-play-state: paused;
+        }
+        @keyframes animation1 {
+            0%{
+                transform: translate(0px) rotateX(0deg);
+            }
+            30%{
+                transform: translate(600px) rotateX(60deg);
+            }
+            50%{
+                transform: translate(300px) rotateX(90deg);
+            }
+            100%{
+                transform: translate(0px) rotateX(0deg);
+            }
+        }
+        .runningmanBox{
+            width: 140px;
+            height: 140px;
+            margin:200px 0px;
+            overflow: hidden;
+            animation:10s linear runningmanBox alternate forwards infinite;
+        }
+        .runningmanPic{
+            width: 1680px;
+            height: 140px;
+            animation:1s runningmanPic steps(12) forwards infinite;
+            background-image: url(./bg.png);
+            /* background-color: pink; */
+            background-size: contain;
+
+        }
+        
+        .runningmanBox:hover .runningmanPic{
+            /* transform: rotate(180deg);  */
+            animation: runningmanPic paused ;
+            /* animation:  */
+
+        }
+        @keyframes runningmanPic{
+            100%{
+                transform:translate(-1680px)
+
+            }
+        }
+        @keyframes runningmanPicReverse{
+            100%{
+                transform:translate(-1680px)
+            }
+        }
+        @keyframes runningmanBox{
+            100%{
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cube">
+        <img class="image6" src="./card3.jpeg" alt="">
+        <img class="image7" src="./card1.png" alt="">
+    </div>
+    <ul>
+        <li>
+            <a href="#">登录</a>
+            <a href="#">index</a>
+        </li>
+        <li>
+            <a href="#">登录</a>
+            <a href="#">index</a>
+        </li>
+        <li>
+            <a href="#">登录</a>
+            <a href="#">index</a>
+        </li>
+        <li>
+            <a href="#">登录</a>
+            <a href="#">index</a>
+        </li>
+    </ul>
+    <div class="animationBox"></div>
+    <div class="runningmanBox">
+        <div class="runningmanPic"></div>
+    </div>
+
+</body>
+</html>

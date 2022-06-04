@@ -1,0 +1,142 @@
+html{
+    font-size: 14px;
+  }
+  /* 头部导航 */
+  .specialTopBanner {
+      width: 100%;
+      max-width: 1600px;
+      padding: 25px 20px 0 20px;
+      background-color: #fff;
+      box-shadow: 0px 4px 10px #ccc;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .specialTopBanner ul li {
+      color: #19191c;
+    }
+    
+    .specialLogo {
+      margin-top: -13px;
+    }
+    
+    .icon-bilibili1 {
+      font-size: 32px;
+      color: #00aeec;
+    }
+    
+    .specialTopBanner .right .origin {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #f6f6f6;
+      text-align: center;
+      letter-spacing: 0;
+      font-size: 14px;
+      line-height: 36px;
+    }
+    .specialTopBanner .right .origin a{
+      color: #4bc4ef;
+    }
+    .specialTopBanner .iptBox input {
+      width: 432px;
+    }
+  
+    .specialTopBanner {
+      padding-top: 25px;
+    }
+    
+    .specialTopBanner .left ul li i {
+      vertical-align: middle;
+    }
+    
+    .specialTopBanner ul li {
+      float: left;
+      /* color: #fff; */
+      margin-right: 10px;
+      height: 50px;
+    }
+    
+    .specialTopBanner .center .iptBox {
+      height: 40px;
+      border-radius: 5px;
+      line-height: 40px;
+      background-color: #e9dddb;
+      padding: 0 5px;
+      margin: -10px 0 0 25px;
+    }
+    
+    .iptBox input {
+      height: 20px;
+      width: 440px;
+      padding: 15px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background-color: #e9dddb;
+    }
+    
+    .iptBox button {
+      background-color: transparent;
+      border: none;
+      width: 30px;
+      height: 30px;
+    }
+    
+    /* 顶部右边 */
+    .right {
+      margin-top: -10px;
+    }
+    
+    .specialTopBanner .right .origin {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      text-align: center;
+      line-height: 36px;
+      color: #28baee;
+    }
+    
+    .right li {
+      text-align: center;
+    }
+    
+    .right li i {
+      font-size: 22px;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    
+    .right li:last-child {
+      margin-left: 16px;
+      width: 90px;
+      height: 34px;
+      border-radius: 8px;
+      background: #fb7299;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      line-height: 34px;
+      cursor: pointer;
+    }
+    .right li .icon-xiazai1{
+      vertical-align: middle;
+    }
+    
+    /* 头部左边小li的触摸效果 */
+  .specialTopBanner .left li:nth-child(n+2):hover {
+    margin-top: -5px;
+    transition: all .3s;
+  }
+  
+  /* 头部右边小li的触摸效果 */
+  .specialTopBanner .right li:nth-child(-n + 7):hover i {
+    top: -5px;
+    left: 0;
+    transition: all .3s;
+  }
+  

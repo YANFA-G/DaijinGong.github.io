@@ -1,0 +1,571 @@
+.w {
+    width: 1240px;
+    height: auto;
+    margin:0 auto;
+    min-width: 1240px;
+}
+body{
+    background-color: #fff;
+    /* 字体直接统一设置为模板 */
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei";
+}
+/* 首行333se */
+header{
+    height: 52.5px;
+    background-color: #333;
+}
+.head {
+    height: 52.5px;
+}
+.head li {
+    float:right;
+    height: 52.5px;
+    width: 89px; 
+}
+.head li a{
+    display: block;
+    padding:0px 16px;
+    margin:18px 0px;
+    height:16.5px;
+    line-height: 16.5px;
+    color: white;
+    font-size:14px;
+    border-right:1px solid #666;
+}
+.login{
+    margin-right: 20px;
+}
+
+.login a {
+    border-right:0px !important;
+    padding-right:0px !important;
+    /* width: 100px; */
+}
+
+.login2::before{
+    content:"";
+    display: inline-block;
+    background: url('../images/sprites.png') no-repeat -159px -69px;
+    vertical-align: middle;
+	width: 13px;
+	height: 18px;
+}
+
+/* 这里是nav：兔子图 */
+nav{
+    background-color: #fff;
+    /* background-color: pink; */
+    overflow: hidden;
+
+}
+.logo {
+    float:left;
+    /* display: block; */
+    margin:30px auto;
+    width: 207px;
+    height: 70px;
+}
+/* 修改首页导航栏位置和文字 */
+.index{
+    height:70px;
+    float:left;
+    margin: 30px 0px 30px 40px;
+    line-height: 70px;
+}
+.index li{
+    float: left;
+    margin-right:48px;
+    
+}
+.index li a{
+    padding-bottom: 7px;
+}
+.index li:hover a{
+    color:#27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+    /* 这里加入输入框，并设置精灵图和框的位置 */
+.search{
+    float:left;
+    width: 172px;
+    height: 28px;
+    border-bottom: 2px solid #a1a0a0;
+    margin:51px auto;
+    margin-left: 15px;
+    /* 文字右移 */
+    padding-left:30px;
+    opacity: 0.3;
+    position:relative;
+    color:#8b8989;
+    font-size: 14px;
+}
+.before{
+    float: left;
+    position: relative;
+    left: 33px;;
+    top:2px;
+    background: url('../images/sprites.png') no-repeat -79px -69px;
+	width: 18px;
+	height: 18px;
+    margin:51px auto;
+    z-index: 2;
+}
+/* 伪类元素背景图片不显示 */
+/* .search::before{
+    content:"";
+    position: relative;
+    left: 30px;
+    top:30px;
+    background: url('../images/sprites.png') no-repeat -79px -69px;
+	width: 18px;
+	height: 18px;
+    background-color: pink;
+} */
+
+.car {
+    float:left;
+    width: 23px;
+    height: 23px;
+    margin:28px 0 0 15px;
+    background: url('../images/sprites.png') no-repeat -119px -69px;
+	/* width: 24px;
+	height: 24px; */
+    position: relative;
+    top:21px;
+}
+.num{
+    position: absolute;
+    top:-8px;
+    left:18px;
+    background-color:#d26943;
+    color:white;
+    width: 20px;
+    height: 15px;
+    font-size:13px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 10px;
+}
+/* 中间兔子部分 */
+.rabbit{
+    background-image: url(../uploads/banner_1.png);
+    height: 500px;
+    overflow: hidden;
+}
+.rabbit ul{
+    float: left;
+    background-color:rgba(0,0,0,0.8);
+    width: 251px;
+    overflow: hidden;
+}
+.rabbit li{
+    width: 251px;
+    height: 50px;
+    padding-left: 36px;
+    line-height: 50px;
+
+}
+.rabbit li em{
+    color: white;
+    font-size: 16px;
+
+}
+.rabbit li b{
+    color: white;
+    font-size: 14px;
+    padding-left:20px;
+
+}
+.rabbit li i{
+    color: white;
+    font-size:14px
+
+}
+.rabbit li i{
+    float:right;
+    position: relative;
+    right:20px;
+    background: url('../images/sprites.png') no-repeat -80px -110px;
+	width: 6px;
+	height: 10px;
+    /* 箭头上下居中 */
+    margin-top:17px;
+    /* background-color: green; */
+}
+.rabbit li:hover{
+    background-color: rgb(66, 65, 65);
+}
+
+.arr_left{
+    float:left;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 50%;
+    margin:227.5px 0px;
+
+}
+.arr_left1{
+    float:left;
+    background: url('../images/sprites.png') no-repeat 0px -70px;
+	width: 13px;
+	height: 23px;
+    margin: 11px 16px;
+}
+.arr_right{
+    float:right;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 50%;
+    margin:227.5px 0px;
+
+
+}
+.arr_right1{
+    float: right;
+    background: url('../images/sprites.png') no-repeat -40px -70px;
+	width: 13px;
+	height: 23px;
+    margin: 11px 16px;
+
+}
+/* 新鲜好物——导航栏文字设定 */
+.guide_newGoods{
+    /* float: left; */
+    height: 114px;
+    color: #333;
+    overflow: hidden;
+}
+.guide_newGoods span{
+    height: 114px;
+    line-height: 114px;
+    float:left;
+    font-size: 16px;
+    margin-left: 34px;
+    color: #999;
+}
+.guide_newGoods h2{
+    height: 114px;
+    line-height: 114px;
+    font-weight: normal;
+    float: left;
+    font-size:29px;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+.guide_newGoods a{
+    float:right;
+    height: 114px;
+    line-height: 114px;
+    color: #999;
+
+}
+/* 一些物品栏 */
+.things_newGoods{
+    /* overflow: hidden; */
+    height: 420px;
+    width: 1260px;
+    margin:8px auto;
+}
+.t {
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    float: left;
+    background-color: #f2f9f4;
+    transition: all 1s;
+}
+.t:last-child{
+    margin-right: 0;
+}
+.t:first-child{
+    margin-left: 8px;
+}
+.t img{
+    width: 304px;
+    height: 304px;
+}
+.t .title{
+    margin:22px auto 14px;
+    font-size:20px;
+    color:#333;
+    text-align: center;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+.t p{
+    color: #8e3627;
+    font-size:23px;
+    text-align: center;
+    height:23px;
+    line-height: 23px;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+.t:hover {
+    /* transition:all 1s; */
+    position: relative;
+    top:-5px;
+    box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    /* transition: all 1s; */
+
+}
+/* 生鲜栏 */
+.guide_newGoods_2{
+    /* float: left; */
+    height: 114px;
+    color: #333;
+    overflow: hidden;
+}
+.guide_newGoods_2 h2{
+    height: 114px;
+    line-height: 114px;
+    font-weight: normal;
+    float: left;
+    font-size:29px;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+.guide_newGoods_2 .ab {
+    float:right;
+
+}
+/* 生鲜——水果蔬菜这些标题 */
+
+.guide_newGoods_2 span{
+    float:right;
+    color:#333;
+    margin:48px 6px 48px 0px;
+    width: 50px;
+    height: 30px;
+}
+.guide_newGoods_2 a{
+    float:right;
+    padding:2px 7px;
+    margin-right:6px;
+    height: 114px;
+    line-height: 114px;
+    color: #999;
+
+}
+.fruit{
+    float:left;
+    margin:0;
+    padding:0;
+    background-color: #27BA9B;
+    color:white !important;    
+    height:24px !important;
+    width: 50px !important;
+    line-height: 20px !important;
+    text-align: center;
+    /* margin:auo 6px auo 0px; */
+}
+
+/* 生鲜——物品展示的配置 */
+.sx_goods_box {
+    width: 1000px;
+    height: 610px;
+
+}
+.sx_goods_box>img{
+    float:left;
+    width: 240px;
+    height: 610px;
+}
+.sx_goods{
+    float:left;
+    width: 1000px;
+}
+.sx_goods_small{
+    float: left;
+    width: 242px;
+    height: 304px;
+    border:2px;
+    margin:0 0 3px 8px;
+    border:2px solid transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.sx_goods_small .image img {
+    width: 238px;
+    height: 184px;
+    margin:8px auto 0px;
+    padding:0px 27px;
+
+}
+.sx_goods_small .image{
+    width: 238px;
+    height: 204px;
+    margin:0px;
+}
+.sx_goods_small .info {
+    width: 238px;
+    height: 92.79px;
+    padding:0 47px 0 29px;
+    margin:0px;
+}
+.sx_goods_small .name{
+    font-size:16px;
+    font-weight: normal;
+}
+.sx_goods_small .type{
+    font-size: 16px;
+}
+.sx_goods_small .price{
+    font-size: 22px;
+    color:#9a2e1f
+}
+/* 生鲜物品hover特征设置 */
+/* hidden实现绿框上移 */
+.hidden {
+    position:absolute;
+    width: 242px;
+    height: 84px;
+    top: 304px;
+    background-color: #27ba9b;
+    transition: all 0.5s;
+}
+.hidden p{
+    width: 125px;
+    height: 26px;
+    margin:19px 58.5px 0px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color:#fff
+}
+.hidden em{
+    display: inline-block;
+    width: 242px;
+    height: 13px;
+    margin-top:8px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+.sx_goods_small:hover {
+    border:2px solid #27ba9b;
+}
+.sx_goods_small:hover .hidden{
+    position: absolute;
+    top: 220px;
+}
+
+/* 最新专题 */
+/* 最新专题——标题 */
+.lastest_topics{
+    height: 114px;
+}
+.lastest_topics_hd h2{
+    height: 114px;
+    line-height: 114px;
+    font-weight: normal;
+    float: left;
+    font-size:29px;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+.lastest_topics_hd p{
+    height: 114px;
+    line-height: 114px;
+    float:right;
+    font-size: 16px;
+    margin-left: 34px;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #999;
+}
+
+
+
+/* 底部大栏——top部分 */
+.w2{
+    min-width: 1393px;
+    width: 1393px;
+    margin: 0 auto;
+
+}
+footer {
+    background-color: #333;
+    /* background-color:pink; */
+    height: 342px;
+    
+}
+.top {
+    height: 175px;
+    width: 1258px;
+    padding:59px 0 0 135px;
+    border-bottom:3px solid #434343;
+    font-size: 28px;
+    color:white;
+
+}
+.bottom {
+    height: 62px;
+    padding-top:40px;
+
+}
+
+.price_friend{
+    float: left;
+    width: 195px;
+    height: 58px;
+    line-height: 58px;
+    margin-right: 300px;
+}
+.price_friend:last-child{
+    margin-right: 0px;
+}
+.price_friend span {
+    float: left;
+    margin-left: 18px;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+.price_friend::before{
+    content: "";
+    float:left;
+    background: url('../images/sprites.png') no-repeat 0 0;
+	width: 58px;
+	height: 58px;
+    vertical-align: middle;
+}
+.price_friend:nth-child(2)::before{
+    content: "";
+    background: url('../images/sprites.png') no-repeat -64px 0;
+}
+/* 底部大栏-bottom最下面的版权栏 */
+.bottom {
+    height: 102px;
+    padding-top:40px;
+}
+.about {
+    display: block;
+    height: 21px;
+    width:465px;
+    margin: 0px auto 20px;
+    font-size: 14px;
+    color: #999;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+
+}
+.about a {
+    /* float:left; */
+    text-align: center;
+    color:#999;
+
+}
+.CopyRight{
+    display: block;
+    height: 21px;
+    width: 200px;
+    margin: 0px auto 20px;
+    font-size: 14px;
+    color:#999;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+
+
+}

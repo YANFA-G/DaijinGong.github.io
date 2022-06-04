@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 800px;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border:1px solid #000;
+            position:relative;
+            perspective: 800px;
+    
+        }
+        .son{
+            position:absolute;
+            left:50%;
+            top:50%;
+            height: 100px;
+            width: 100px;
+            border:1px solid #000;
+            background-color: pink;
+            transition: all 2s;
+            /* transform: translate(-50%,-50%); */
+
+        }
+        .box:hover .son{
+            /* transform: translate(-300%,-100%); */
+            /* transform: translate3D(100px,0px,500px); */
+            /* transform:rotate3D(90deg,0deg,0deg); */
+            transform:rotateX(60deg);
+            background-color: green;
+        }
+        .translate{
+            float:left;
+            width: 1536px;
+            height: 969px;
+            overflow: hidden;
+            background-image: url(./card2.jpeg);
+            background-size: cover;
+        }
+        .translate .a {
+            float:left;
+            width: 768px;
+            height: 969px;
+            background-image: url(./card1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 2;
+            transition: all 2s;
+
+        }
+        .translate .b {
+            float:right;
+            width: 768px;
+            height: 969px;
+            background-image: url(./card1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 0;
+            z-index: 2;
+            transition: all 2s;
+
+        }
+        .translate:hover .a{
+            transform: translate(-100%);
+        }
+        .translate:hover .b{
+            transform: translate(100%);
+        }
+        /* rotate!! */
+        .big{
+            width: 500px;
+            height: 500px;
+            border:1px solid #000;
+            perspective: 800px;
+        }
+        .rotate{
+            /* float: left; */
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border:1px solid #000;
+            border-radius: 50% 50%;
+            overflow: hidden;
+            /* transform:translate(100px,100px); */
+        }
+        .rotate .black{
+            /* float: left; */
+
+            width: 150px;
+            height: 300px;
+            background-color: #000;
+        }
+        .rotate:hover {
+            transform: rotateX(360deg);
+        }
+        .imageBox{
+            width: 350px;
+            margin:0px auto;
+            perspective: 1000px;
+            clear: both;
+        }
+        .image{
+            width: 350px;
+            height: 221px; 
+            display: inline-block;
+            transition: all 3s;
+            transform-origin: left;
+        }
+        .imageBox:hover .image{
+            transform:rotateX(-60deg);
+            /* transform:translate(2000px) rotate(720deg); */
+        }
+        .image2{
+            width: 350px;
+            height: 221px; 
+            display: inline-block;
+            transition: all 3s;
+            transform-origin: right;
+        }
+        .imageBox:hover .image2{
+            /* transform:rotate3D(10deg,720deg,0deg); */
+            transform:rotateX(-60deg);
+
+        }
+        .image3{
+            display: block;
+            transition: all 3s;
+            /* transform-origin: right bottom; */
+        }
+        .image3:hover{
+            transform:translate(200%) scale(3);
+        }
+        .image4{
+            display: block;
+            transition: all 1s;
+            transform-origin: center;
+        }
+        .image4:hover{
+            /* transform:translate3d(40px,40px,40px); */
+            transform:translateZ(40px)
+        }
+        .image5{
+            display: block;
+            transition: all 3s;
+            /* transform-origin: right bottom; */
+        }
+        .image5:hover{
+            transform:translate(200%) scale(3);
+        }
+        /* cube-rotate */
+        .cube{
+            transform-style: preserve-3d;
+            width: 350px;
+            height: 221px;
+            margin:100px auto 500px;
+            background-color: pink;
+            clear:both;
+            transition:all 5s;
+            transform-origin: center;
+        }
+        .cube:hover{
+            transform:rotateY(60deg);
+        }
+        .image6{
+            position:absolute;
+            top:0px;
+            width: 350px;
+            height: 221px; 
+            transition: all 3s;
+            /* transform-origin: right bottom; */
+        }
+        .image6:hover{
+            /* transform:rotateY(60deg); */
+        }
+        .image7{
+            width: 350px;
+            height: 221px; 
+            position: absolute;
+            top:0px;
+            transition: all 3s;
+            transform:translateZ(100px)
+            /* transform-origin: right bottom; */
+        }
+        .image7:hover{
+            /* transform:rotateY(60deg); */
+        }
+        .jianbian{
+            margin:0 auto;
+            width: 2000px;
+        }
+        .jianbian .card{
+            float:left;
+            width: 600px;
+            height: 600px;
+            border:1px solid #000;
+            margin-right:10px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5%;;
+
+        }
+        .jianbian .pic{
+            width: 600px;
+            height: 400px;
+            background-image: url(./card1.png);
+            background-size: cover;
+        }
+        .jianbian .word{
+            width:600px;
+            height: 300px;
+            background-color: pink;
+            position: absolute;
+            bottom:-100px;
+
+        }
+        .jianbian .card::before{
+            content: "";
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            background-image: linear-gradient(to top, rgba(0,0,0,.9));
+            /* background-color: green; */
+            z-index: 12;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="son"></div>
+    </div>
+    <div class="translate">
+        <span class="a"></span>
+        <span class="b"></span>
+    </div>
+    <div style="clear:both"></div>
+    <div class="big">
+        <div class="rotate">
+            <div class="black"></div>
+            <div class="white">有问题！！！！！！！</div>
+        </div>
+    </div>
+    <div class="imageBox">
+        <img class="image" src="./card2.jpeg" alt="">
+        <img class="image2" src="./card2.jpeg" alt="">
+        <img class="image" src="./card2.jpeg" alt="">
+        <img class="image2" src="./card2.jpeg" alt="">
+        <img class="image" src="./card2.jpeg" alt="">
+        <img class="image2" src="./card2.jpeg" alt="">
+        <img class="image3" src="./card2.jpeg" alt="">
+        <img class="image4" src="./card2.jpeg" alt="">
+        <img class="image5" src="./card2.jpeg" alt="">
+
+    </div>
+    <div style="clear: both;"></div>
+    <div class="cube">
+        <img class="image6" src="./card3.jpeg" alt="">
+        <img class="image7" src="./card1.png" alt="">
+    </div>
+
+    <div class="jianbian">
+        <div class="card">
+            <div class="pic"></div>
+            <div class="word"></div>
+        </div>
+        <div class="card">
+            <div class="pic"></div>
+            <div class="word"></div>
+        </div>
+        <div class="card">
+            <div class="pic"></div>
+            <div class="word"></div>
+        </div>
+    </div>
+
+</body>
+</html>

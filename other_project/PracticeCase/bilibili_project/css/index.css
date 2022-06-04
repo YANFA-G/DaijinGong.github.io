@@ -1,0 +1,625 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #fff !important;
+    font-size:14px;
+}
+.w {
+    margin:0 auto;
+    width: 1350px;
+}
+header video{
+    height: 150px;
+    width:100%;
+    object-fit: cover;
+}
+
+/* 首行左侧导航栏 */
+header {
+    position: relative;
+
+}
+header .shadow {
+    position: absolute;
+    top:0;
+    height:80px;
+    width:100%;
+    background: linear-gradient(rgb(71, 71, 71),transparent); 
+}
+.headTop{
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -675px;
+    padding-top: 25px;
+    float:left;
+    /* 大概高度 */
+    height: 50px;
+    font-size:14px;
+
+}
+/* .headTopLeft{
+
+} */
+.headTopLeft li{
+    float:left;
+    padding-right:10px;
+    height: 14px;
+    margin-top:8px;
+}
+.headTopLeft li a{
+    color:white;
+}
+/* 顶端搜索框 */
+.input_box{
+    float: left;
+    width: 440px;
+    height: 40px;
+    margin-top:-6px;
+    margin-left:32px;
+}
+
+.input_box input{
+    float: left;
+    width: 440x;
+    height: 10px;
+    border-radius: 6px;
+    /* border:15px solid #e9dddb; */
+    padding:15px;
+ 
+    background-color: #e9dddb;
+}
+.input_box .icon-sousuo{
+    float: left;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+}
+
+/* 顶端右侧导航栏 */
+.headTopRight {
+    float: left;
+    margin-left:65px;
+}
+.headTopRight li i{
+    font-size:22px;
+    position: relative;
+    top: 0;
+    transition: all 0.5s;
+
+}
+.headTopRight li{
+    float: left;
+    margin-right:10px;
+    text-align: center;
+    color:white;
+}
+.headTopRight li:first-child{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    color:#28baee;
+    line-height:36px;
+}
+.headTopRight li:nth-child(-n+7):hover i{
+    /* transition: all 1s; */
+    top:-5px;
+}
+.headTopRight li:last-child{
+    background-color: #e97a99;
+    border-radius: 10px;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+}
+.headTopRight li:last-child i{
+    vertical-align: middle;
+}
+/* 内容 */
+.content{
+    background-color: #fff !important;
+    padding: 20px 0px;
+    width: 1350px;
+    height: 60px;
+}
+.content_left{
+    float:left;
+    width:218px;
+    height: 68px;
+}
+.content_left ul {
+    float:left;
+}
+.content_left ul li{
+    float:left;
+    width: 40px;
+    text-align: center;
+    margin:0px 15px;
+}
+.content_left_top{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+.content_left_top i{
+    font-size:24px;
+    line-height: 42px;
+    text-align: center;
+    color:white;
+}
+.content_left li:nth-child(1) .content_left_top{
+    background-color: #f0973b;
+}
+.content_left li:nth-child(2) .content_left_top{
+    background-color: #e17e79;
+}
+.content_left li:nth-child(3) .content_left_top{
+    background-color: #78c77c;
+}
+.content_left_bottom{
+    margin:6px 0 0 ;
+    font-size:14px;
+}
+
+/* 内容——中间分类标签排版（番剧、国创。。。。） */
+.content_center {
+    float:left;
+    width:873px;  
+    height: 68px;
+
+}
+.content_center ul{
+    float:left;
+    width:873px;  
+    height: 68px;
+    padding-right: 7px;
+    border-right:1px solid rgb(204,204,204)
+}
+.content_center li{
+    float:left;
+    width: 86px;
+    height: 28px;
+    margin: 0px 8px 12px 0px;
+    background-color: #f6f7f8;
+    font-family: 14px;
+    text-align: center;
+    line-height: 28px;
+    color:#61666d;
+    font-size:14px;
+    border-radius: 5px;
+}
+
+.content_center li:nth-child(n+10){
+    margin-bottom: 0px;
+}
+.content_center li:hover{
+    background-color: grey;
+    color:white
+}
+
+/* 内容-右侧图标+分类，定位说明 */
+.content_right{
+    float: left;
+    width: 255px;
+    height: 104px;
+    margin:5px 0 0;
+}
+.content_right ul {
+    float:left;
+}
+.content_right li{
+    float:left;
+    padding-left: 20px;
+    margin-bottom:16px;
+    font-size:14px;
+}
+.contetn_right li:nth-child(n+4){
+    margin-bottom:0px;
+}
+.content_right li:hover {
+    color:#00aeec;
+}
+
+/* 动画宣传栏——第一部分——左边b站宣传 */
+.video_nav{
+    /* height: 365px; */
+    overflow: hidden;
+}
+.video_nav_left{
+    float:left;
+    width:535.2px;
+    height: 365px;
+    overflow: hidden;
+    border-radius:10px;
+}
+.video_nav_left img{
+    width: 535.2px;
+    height:275px;
+}
+/* b站宣传栏阴影设置 */
+.video_nav_left .shadow{
+    z-index: 1;
+    width: 535.2px;
+    height:90px;
+    position: relative;
+    top:0px;
+    background-color: #4a4589;
+    /* background:linear-gradient(to top,#2e309c,transparent); */
+    box-shadow:0px 10px 35px 35px #4a4589;
+}
+.video_nav_left_banner{
+    z-index:2;
+    position:relative;
+    top:-90px;
+    width: 515.2px;
+    height:60px;
+    padding:30px 10px 0px;
+}
+.video_nav_left_banner .bannerUp{
+    height: 28px;
+
+}
+.video_nav_left_banner .bannerUp .word{
+    float:left;
+    height: 20px;
+    font-size:14px;
+    color:white;
+}
+.video_nav_left_banner .bannerUp .icon-xiangzuojiantou{
+    z-index: 3px;
+    float:right;
+    width: 28px;
+    height: 28px;
+    color:white;
+    font-size:14px;
+    text-align: center;
+    line-height: 28px;
+    margin-right:12px;
+    background-color: #5c5895;
+    border-radius: 10px;
+}
+.video_nav_left_banner .bannerUp .icon-xiangyoujiantou{
+    z-index: 3px;
+    float:right;
+    width: 28px;
+    height: 28px;
+    color:white;
+    font-size:14px;
+    text-align: center;
+    line-height: 28px;
+    margin-right:12px;
+    background-color: #5c5895;
+    border-radius: 10px;
+}
+.video_nav_left_banner .bannerUp .icon-xiangyoujiantou:hover{
+    background-color: grey;
+}
+.video_nav_left_banner .bannerUp .icon-xiangzuojiantou:hover{
+    background-color: grey;
+}
+.video_nav_left_banner ul{
+    height:15px;
+}
+.video_nav_left_banner li{
+    float:left;
+    height:8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color:#9491b5;
+    margin-right: 7px;
+    margin-top:2px;
+}
+.video_nav_left_banner li:first-child{
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+    margin-right:3px;
+    margin-top:0px;
+}
+.video_nav_left_banner li:hover{
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+    margin-right:3px;
+    margin-top:0px;
+}
+/* 右侧视频定位 */
+/* 上图片，图片内俩带图标的标签用于隐藏显示特效，下为标题和up主 */
+.video_nav_right {
+    width: 814.8px;
+    height: 448px;
+    float:left;
+}
+.video_nav_right li{
+    float:left;
+}
+.right_card{
+    float:left;
+    width: 263.6px;
+    height: 224px;
+    position:relative;
+    margin-left:8px;
+}
+.right_card .img{
+    width: 263.6px;
+    height: 135px;
+    border-radius:10px;
+    overflow: hidden;
+
+}
+.right_card img{
+    width: 263.6px;
+    height: 135px;
+    transition: all .8s;
+
+}
+.right_card_mask1{
+    position:absolute;
+    top:106px;
+    color:white;
+    height:20px;
+    /* background-color: pink; */
+    opacity: 1;
+    transition: all .8s;
+
+
+}
+.right_card_mask1 i{
+    float:left;
+    vertical-align: middle;
+    margin-left:8px;
+}
+.right_card_mask1 span{
+    float:left;
+    line-height: 20px;
+    margin-left:75px;
+}
+.right_card_mask2{
+    z-index:3;
+    position:absolute;
+    top:8px;
+    right:8px;
+    /* background-color: pink; */
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: all .8s;
+
+
+}
+.right_card_mask2 i{
+    font-size: 24px;
+    color:white;
+}
+
+.right_card_owner{
+    color:#979bb4;
+    font-size:14px;
+}
+.right_card:hover .right_card_mask2{
+    opacity: 1;
+}
+.right_card:hover .right_card_mask1{
+    opacity: 0;
+}
+.right_card:hover img{
+    transform:scale(1.2,1.2);
+}
+.right_card_title:hover{
+    color:#00aeec
+}
+.right_card_owner:hover{
+    color:#00aeec;
+}
+
+
+/* 第二行动画的导航栏 */
+.video_tg_nav{
+    height: 45px !important;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+.video_tg_nav>i{
+    float: left;
+    color:#f9d886;
+    height: 45px;
+    width: 45px;
+    font-size:45px !important;
+    /* vertical-align:middle; */
+    line-height: 45px;
+}
+.video_tg_nav>span{
+    float: left;
+    font-size:24px;
+    font-weight:bold;
+    /* height: 45px; */
+    line-height: 45px;
+    /* padding-bottom: 10px; */
+}
+/* 换一换啥的的属性 */
+.huanyihuan{
+    float: right;
+    font-size: 16px;
+}
+.huanyihuan li{
+    float:left;
+    /* width: 49px; */
+    height: 15px;
+    padding:7px 12px;
+    border:1px solid rgb(227,229,231);
+    border-radius: 8px;
+    margin:0px 8px;
+    text-align: center;
+    line-height: 15px;
+}
+.huanyihuan li span{
+    font-size: 12px !important;
+    color:#18191c;
+}
+.huanyihuan li i{
+    font-size: 14px !important;
+    color:#18191c;
+}
+/* 第二行动画采用之前的css */
+
+.video_1 ul{
+    float:none;
+    overflow: hidden;
+}
+.middle_card{
+    float:left;
+    width: 263.6px;
+    height: 224px;
+    position:relative;
+    margin-left:8px;
+}
+.video_1 li:first-child .middle_card{
+    margin-left:0px;
+}
+.middle_card .img{
+    width: 263.6px;
+    height: 135px;
+    border-radius:10px;
+    overflow: hidden;
+
+}
+.middle_card img{
+    width: 263.6px;
+    height: 135px;
+    transition: all .8s;
+
+}
+.middle_card_mask1{
+    position:absolute;
+    top:106px;
+    color:white;
+    height:20px;
+    /* background-color: pink; */
+    opacity: 1;
+    transition: all .8s;
+
+
+}
+.middle_card_mask1 i{
+    float:left;
+    vertical-align: middle;
+    margin-left:8px;
+}
+.middle_card_mask1 span{
+    float:left;
+    line-height: 20px;
+    margin-left:75px;
+}
+.middle_card_mask2{
+    z-index:3;
+    position:absolute;
+    top:8px;
+    right:8px;
+    /* background-color: pink; */
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: all .8s;
+
+
+}
+.middle_card_mask2 i{
+    font-size: 24px;
+    color:white;
+}
+
+.middle_card_owner{
+    color:#979bb4;
+    font-size:14px;
+}
+.middle_card:hover .middle_card_mask2{
+    opacity: 1;
+}
+.middle_card:hover .middle_card_mask1{
+    opacity: 0;
+}
+.middle_card:hover img{
+    transform:scale(1.2,1.2);
+}
+.middle_card_title:hover{
+    color:#00aeec
+}
+.middle_card_owner:hover{
+    color:#00aeec;
+}
+
+.video_tg_nav{
+    height: 55px;
+}
+.video_tg_nav i{
+    color:#f9d886;
+    font-size:24px;
+}
+.video_tg_nav span{
+    font-size:24px;
+}
+/* 动画一栏 */
+.donghua{
+    overflow: hidden;
+}
+/* 动画一栏--左侧动画展示区 */
+.donghua_left{
+    float: left !important;
+    width: 1078.4px;
+    height: 448px;
+    background-color:green;
+    /* overflow: hidden; */
+}
+/* 动画一栏--右侧动画排行榜列表区 */
+.donghua_right{
+    float:left !important;
+    width: 263.6px;
+    height:452.5px; 
+    /* background-color: pink; */
+}
+/* 动画一栏--右侧动画排行榜列表区--标题 */
+.donghua_right_list_head{
+    height: 33.5px;
+    padding-left:10px;
+    margin-bottom:1px;
+    border-bottom: 1px solid #e3e5e7;
+}
+.donghua_right_list_head .fl{
+    float: left;;
+    font-size:24px;
+}
+.donghua_right_list_head .fr{
+    float:right;
+    width: 36px;
+    height: 15px;
+    padding:7px 12px;
+    border:1px;
+    margin-left:8px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 8px;
+    border:1px solid #e3e5e7;
+}
+.donghua_right_list_head .fr i{
+    font-size: 12px;
+}
+/* 动画一栏--右侧动画排行榜列表区--主题 */
+.donghua_right_list_body{
+    width:263.6px;
+    height: 452.5px;
+}
+.donghua_right_list_body li{
+    width: 231.6px;
+    height: 52px;
+    padding:0px 15px;
+    line-height: 52px;
+}
+.donghua_right_list_body li em{
+    margin-right:10px;
+}

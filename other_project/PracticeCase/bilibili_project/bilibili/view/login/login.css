@@ -1,0 +1,144 @@
+.specialTop{
+    height: 75px;
+}
+.btmBanner{
+    height: 510px;
+}
+.centerBanner{
+    background-color: #00a0d8;
+    text-align: center;
+    height: 86px;
+}
+/* 登录文字 */
+.logoText{
+    width: 980px;
+    margin: 60px auto 28px;
+    border-bottom: 1px solid #ccc;
+    height: 28px;
+    text-align: center;
+    line-height: 56px;
+}
+.logoTitle{
+    font-size: 28px;
+    padding: 0 20px;
+    background-color: #fff;
+}
+/* 下面登录扫码框 */
+.logoBox{
+    margin: 0 auto;
+    width: 980px;
+    color: #717171;
+}
+.logoLeft,
+.logoRight{
+    width: 480px;
+    height: 370px;
+    text-align: center;
+    padding-top: 72px;
+}
+.ErVMa{
+    position: relative;
+}
+/* hover二维码显示下载app */
+.hiddenFather{
+    width: 480px;
+    height: 144px;
+}
+.hiddenFather:hover .hiddenBG{
+    width: 480px;
+    height: 144px;
+}
+.hiddenFather:hover .ErVMaImg{
+    display: none;
+}
+.testImg{
+    height: 144px;
+    width: 144px;
+    background: url(../img/ErVMa.png);
+    margin: 0 auto;
+}
+.hiddenBG{
+    width: 0;
+    height: 144px;
+}
+.iphonePeople{
+    width: 70px;
+    height: 70px;
+    background: url(../img/mostIPhone.png);
+    position:absolute;
+    top: -60px;
+    left: 160px;
+}
+.twoPeople{
+    height: 155px;
+    background: url('../img/twoPeople.png') no-repeat;
+    padding-top: 35px;
+}
+/* 中间分割线 */
+.line{
+    float: left;
+    border-right: 1px solid #ddd;
+    height: 300px;
+    margin-top: 28px;
+}
+/* 登录框右边内容 */
+.logoRight{
+    padding-left: 40px;
+    padding-right: 26px;
+    text-align: left;
+    color: #555;
+}
+.iptText input,
+.iptPwd input{
+    width: 414px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    color: #aaa;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.formMsg{
+    margin: 20px 0 10px;
+}
+.logonRegister button{
+    width: 184px;
+    height: 38px;
+    border-radius: 2px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+}
+.logonRegister button:first-child{
+    border: 1px solid #0381aa;
+    color: #fff;
+    background-color: #00a7de;
+}
+.logonRegister button:last-child{
+    color: #555;
+    border: 1px solid #ccc;
+}
+.otherLogo{
+    margin-top: 10px;
+}
+.otherLogo .iconfont{
+    font-size: 22px;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+.otherLogo>div{
+    margin-right: 15px;
+}
+/* 用户协议和隐私政策 */
+.listRuler{
+    margin-top: 40px;
+    color: #717171;
+    text-align: center;
+}
+.listRuler a{
+    color: #00a0d8;
+}
+
+
